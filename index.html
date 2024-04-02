@@ -1,93 +1,94 @@
-<!DOCTYPE html> <!-- Esse é o DTD do HTML 5. -->
-
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>Exemplo HTML</title>
-    </head>
+    <style>
+        header {
+            background-color: blue;
+        }
+        h1, h2 {
+            font-family: serif;
+        }
+        nav {
+            font-weight: bold;
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+        }
+        #conteudo {
+            line-height: 1.5;
+        }
+        form {
+            border: solid 1px grey;
+            padding: 10px;
+        }
+        p {
+            color: green;
+        }
+        button {
+            background-color: blue;
+            color: white;
+        }
+        footer {
+            border-top: solid 2px red;
+        }
+    </style>
+</head>
 <body>
-        <div class="container">
-            
-        
-        <header class="cabecalho">
-        <h1 style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">Minha Página</h1>
-        
+<div class="container">
+    <header>
+        <h1>Minha Página</h1>
         <nav>
             <ul>
-                <li><a href="./paginas/help.html"><img src="./img/help.png" alt="Interrogação" width="5%" title="Ajuda"></a></li>
-                <li><a href="./paginas/about.html"><img src="./img/about.png" alt="Caractere i estilizado" width="5%" title="Sobre"></a></li>
-                <li><a href="./paginas/contact.html"><img src="./img/contact.png" alt="Icone de Carta para auxilio" width="5%" title="Contato"></a></li>
-            </ul>       
+                <li><a href="./paginas/help.html">Ajuda</a></li>
+                <li><a href="./paginas/about.html">Sobre</a></li>
+                <li><a href="./paginas/contact.html">Contato</a></li>
+            </ul>
         </nav>
-        <!-- esta area sera do cabecalho-->
         <hr />
-        
-            <!-- esta area sera do conteudo-->  
-        <section>
-            <div id="help">
-                <h2>HELP</h2>
-                <p>Help - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa et dolore quam recusandae error molestias maxime aut provident laborum repudiandae aperiam excepturi maiores rerum quisquam odio quidem eligendi quis exercitationem veritatis commodi placeat, soluta qui, delectus cupiditate! Delectus, eos repudiandae vel blanditiis ut, ipsum quidem magni vitae esse, perferendis modi.
-
-                </p>
-                <a href="#">Mais... </a>
-            </div>
-            <div id="about">
-                <h2>ABOUT</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-                  vel odio hic ullam accusamus maxime beatae quidem ratione placeat
-                  unde?
-                </p>
-                <a href="#">Mais...</a>
-              </div>
-            <div id="contact">
-                <h2>CONTACT</h2>
-                <form >
-                    <fieldset>
-                        <legend>Costumer Data</legend>
-                    <label for="idNm">Nome: </label>
-                    <input 
-                           type="text"
-                           name="txtNm" 
-                           id="idNm" 
-                           placeholder="Digite seu nome"> 
-                    </fieldset>
-                </form>
-            </div>
-            <form >
+    </header>
+    <section id="conteudo">
+        <div id="help">
+            <h2>HELP</h2>
+            <p>Help - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa et dolore quam recusandae error molestias maxime aut provident laborum repudiandae aperiam excepturi maiores rerum quisquam odio quidem eligendi quis exercitationem veritatis commodi placeat, soluta qui, delectus cupiditate! Delectus, eos repudiandae vel blanditiis ut, ipsum quidem magni vitae esse, perferendis modi.</p>
+            <a href="#">Mais... </a>
+        </div>
+        <div id="about">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel odio hic ullam accusamus maxime beatae quidem ratione placeat unde?</p>
+            <a href="#">Mais...</a>
+        </div>
+        <div id="contact">
+            <h2>CONTACT</h2>
+            <form>
                 <fieldset>
-                <label for="idNm">Email: </label>
-                <input 
-                       type="email"
-                       name="txtEmail" 
-                       id="idEmail"    
-                       placeholder="Digite seu email"> 
+                    <legend>Costumer Data</legend>
+                    <label for="idNm">Nome: </label>
+                    <input type="text" name="txtNm" id="idNm" placeholder="Digite seu nome">
+                </fieldset>
+                <fieldset>
+                    <label for="idEmail">Email: </label>
+                    <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu email">
                 </fieldset>
                 <div>
-                <button
-                type="button">Send</button>
-                
-                </button>
-
+                    <button type="button">Send</button>
                 </div>
             </form>
-        </section>
-         <!-- esta area sera do conteudo-->    
-         <!-- esta area sera do rodape--> 
-
-        </header>
-        <footer class="rodape">
-            <nav>
-                <ul>
-                    <li><a href="https://www.fiap.com.br">FIAP</a></li>
-                    <li><a href="https://www.google.com">Google</a></li>
-                    <li><a href="https://www.github.com">GitHub</a></li>
-                </ul>       
-            </nav>
-            <p>Todos os direitos reservados &copy; - Minha página 2024</p>
-        </footer>   
-    </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.fiap.com.br">FIAP</a></li>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.github.com">GitHub</a></li>
+            </ul>
+        </nav>
+        <p>Todos os direitos reservados &copy; - Minha página 2024</p>
+    </footer>
+</div>
 </body>
 </html>
-
